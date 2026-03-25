@@ -1,4 +1,4 @@
-# Google Play Store Market Analysis
+# Análisis del Mercado de Google Play Store
 
 De Literatura a Ciencia de Datos.  
 Trabajo donde la estrategia, la creatividad y la analítica convergen.
@@ -7,74 +7,78 @@ Trabajo donde la estrategia, la creatividad y la analítica convergen.
 
 ## Contexto
 
-Este proyecto analiza el ecosistema de Google Play Store utilizando datos reales de más de 9,000 aplicaciones móviles.
+Este proyecto analiza el ecosistema de Google Play Store a partir de un dataset real de aplicaciones móviles.
 
-El objetivo es entender el comportamiento de los usuarios, el desempeño de las apps y la dinámica del mercado a través de análisis de datos y visualización.
+El objetivo es entender cómo se comportan las apps en términos de calificaciones, descargas, precios y percepción de los usuarios.
 
 ---
 
 ## Objetivo
 
-- Identificar patrones en las calificaciones y comportamiento de usuarios  
-- Analizar diferencias entre aplicaciones gratuitas y de pago  
-- Explorar la distribución por categorías y concentración del mercado  
-- Extraer insights útiles para estrategia de negocio  
+- Analizar la distribución de aplicaciones por categoría  
+- Evaluar el comportamiento de las calificaciones (ratings)  
+- Explorar la relación entre tamaño, precio y calificación  
+- Comparar el desempeño de apps gratuitas vs de pago  
+- Analizar el sentimiento de las reseñas de usuarios  
 
 ---
 
 ## Dataset
+https://drive.google.com/drive/folders/1RBobZZ0mdyHDK0Z_SuBz2e6PXhcZPCFi?usp=drive_link
 
-- Fuente: https://drive.google.com/drive/folders/1RBobZZ0mdyHDK0Z_SuBz2e6PXhcZPCFi?usp=drive_link
-- Registros: 9,659 apps después de limpieza  
-- Variables: Category, Rating, Reviews, Size, Installs, Price, Content Rating, Genres  
+- Más de **9,659 aplicaciones** después de eliminar duplicados  
+- 33 categorías diferentes de aplicaciones  
+- Variables clave: Rating, Reviews, Size, Installs, Price, Category, Type  
 
-Nota: Los datos crudos no se incluyen por su tamaño. Consulta la fuente.
+Los datos fueron limpiados para eliminar caracteres especiales y asegurar consistencia numérica en variables como Installs y Price.
 
 ---
 
 ## Metodología
 
-1. Limpieza y preparación de datos  
+1. Limpieza de datos  
    - Eliminación de duplicados  
-   - Conversión de columnas (Installs, Price) a formato numérico  
-   - Manejo de valores faltantes  
+   - Conversión de variables a formato numérico  
+   - Validación de valores  
 
 2. Análisis exploratorio  
    - Distribución por categorías  
-   - Distribución de calificaciones  
-   - Relación tamaño y precio  
+   - Distribución de ratings  
+   - Análisis de tamaño y precio  
 
 3. Análisis comparativo  
    - Apps gratuitas vs de pago  
-   - Categoría vs precio  
+   - Relación entre categoría y precio  
 
 4. Análisis de sentimiento  
-   - Comparación de polaridad en reseñas  
+   - Evaluación de polaridad en reseñas de usuarios  
 
 ---
 
 ## Hallazgos clave
 
-- El mercado está concentrado: categorías como *Family*, *Game* y *Tools* dominan en volumen  
+- El dataset contiene 33 categorías, donde *Family*, *Game* y *Tools* concentran la mayor cantidad de aplicaciones  
+- El rating promedio es de aproximadamente **4.17**, con la mayoría de apps entre 4.0 y 4.7  
 - No se encontró una relación clara entre el tamaño de la app y su calificación  
-- Las apps de pago tienen calificaciones ligeramente más altas (4.26 vs 4.17), pero mucha menor popularidad  
-- Las apps gratuitas dominan en descargas, pero presentan mayor variabilidad en opiniones  
-- Se identificaron apps con precios muy altos sin valor funcional claro (outliers)  
+- Las apps de pago tienen un rating promedio ligeramente mayor (**4.26 vs 4.17**)  
+- Las apps gratuitas dominan en descargas y número de reseñas  
+- Existen aplicaciones con precios extremadamente altos (hasta ~$400), muchas sin valor funcional claro  
 
 ---
 
 ## Interpretación de negocio
 
-- Las calificaciones altas no diferencian significativamente, ya que la mayoría de apps están bien valoradas  
-- Las apps gratuitas maximizan alcance, pero las de pago tienden a tener usuarios más estables  
-- Existe saturación en categorías principales  
-- La estrategia de precio debe centrarse en el valor percibido, no solo en el costo  
+- Las calificaciones altas no son un diferenciador fuerte, ya que la mayoría de apps están bien valoradas  
+- Las apps gratuitas maximizan alcance y visibilidad, pero presentan mayor variabilidad en la percepción del usuario  
+- Las apps de pago tienen usuarios más estables, pero menor volumen  
+- El mercado está concentrado en pocas categorías, lo que sugiere alta competencia  
+- La estrategia de monetización debe considerar percepción de valor más que el precio absoluto  
 
 ---
 
 ## Herramientas y tecnologías
 
-- Python (Pandas, NumPy, Scikit-learn)  
+- Python (Pandas)  
 - Visualización (Matplotlib, Seaborn)  
 - Jupyter Notebook  
 
@@ -84,15 +88,11 @@ Nota: Los datos crudos no se incluyen por su tamaño. Consulta la fuente.
 
 En este repositorio encontrarás:
 
-- **/notebooks**  
-  Notebook principal con todo el análisis: limpieza de datos, exploración, visualizaciones y conclusiones.
-
+- **Notebook principal**  
+  Contiene todo el análisis: limpieza de datos, exploración, visualizaciones y conclusiones.
 
 - **Archivo de conclusiones (PDF)**  
-  Resumen estructurado de los hallazgos más relevantes del análisis.
-
-- **Dataset**  
-  No se incluye directamente en el repositorio por su tamaño, pero se proporciona el enlace en la sección correspondiente.
+  Resumen estructurado de los hallazgos más importantes.
 
 ---
 
