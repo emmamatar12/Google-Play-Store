@@ -24,7 +24,7 @@ El objetivo es entender el comportamiento de los usuarios, el desempeño de las 
 
 ## Dataset
 
-- Fuente: https://www.kaggle.com/  
+- Fuente: https://drive.google.com/drive/folders/1RBobZZ0mdyHDK0Z_SuBz2e6PXhcZPCFi?usp=drive_link
 - Registros: 9,659 apps después de limpieza  
 - Variables: Category, Rating, Reviews, Size, Installs, Price, Content Rating, Genres  
 
